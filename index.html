@@ -1,0 +1,61 @@
+ 
+<html>
+    <head>
+      <title>Image recognition</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+  
+     <link rel="stylesheet" href="style.css">
+    
+    </head>
+  
+    <body style="background-color: rgb(163, 229, 255);">
+    <div class="container">
+      
+      <center>
+        <h3 style="color: white;  font-size: 18px; border-radius: 10px; letter-spacing: 10px;" class="btn btn-warning">
+        The Face Recognizer<br>
+        </h3>
+        <br><br>
+  
+  
+        <h3 style="color: white;">Take a selfie to figure out the face!</h3><br>
+  
+  
+        <p style="font-size: 22px;">It is: <span id="res_ob_1"></span></p>
+        <p style="font-size: 22px;">Confidence: <span id="res_ob_2"></span></p>
+      </center>
+      <div style="float: left;">
+        <label>Webcam View - </label>
+        <div id="camera" ></div>
+        <br><br>
+       
+        
+        <center>
+        <button onclick="take_snap()" class="btn btn-info">Capture Pic</button>
+      </center>
+      </div>
+      <div style="float: right;">
+        <label>Captured Img- </label>
+        <div id="result"  ></div>
+        <center>
+          <br><br>
+        <button onclick="check()" class="btn btn-success">Identify Pic</button>
+      </center>
+      </div>
+        
+  
+        
+      
+  
+    </div>
+  <script src="main.js"></script>
+  
+    </body>
+  </html>
+  
+   
